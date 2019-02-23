@@ -71,5 +71,4 @@ public class SortingAlgorithmTest{
         Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
-
 }
