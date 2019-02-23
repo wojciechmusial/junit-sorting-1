@@ -1,7 +1,9 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import java.util.Random;
+
 public class SortingAlgorithmTest {
     private SortingAlgorithms classUnderTest;
 
@@ -55,7 +57,6 @@ public class SortingAlgorithmTest {
 
     }
 
-
     @Test
     public void testSortowaniaJB4() throws Exception {
         double[] toSort = {5, 1, 3, 2, 6};
@@ -76,7 +77,7 @@ public class SortingAlgorithmTest {
     }
 
     @Test
-    public void testSortowaniaJB9() throws Exception {
+    public void testSortowaniaJB14() throws Exception {
         double[] toSort = new double[10000];
         Random r = new Random();
         for (int i = 0; i < toSort.length; i++)
@@ -88,4 +89,3 @@ public class SortingAlgorithmTest {
     }
 
 }
-
