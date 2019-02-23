@@ -62,4 +62,14 @@ public class SortingAlgorithmTest{
 
     }
 
+    @Test
+    public void testSortowaniaJB4() throws Exception {
+        double[] toSort = {5, 1, 3, 2, 6};
+        double[] expected = {6, 5, 3, 2, 1};
+
+        classUnderTest.sort(toSort, false);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
+
+    }
+
 }
