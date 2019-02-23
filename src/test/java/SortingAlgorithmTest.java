@@ -67,7 +67,7 @@ public class SortingAlgorithmTest {
     }
 
     @Test
-    public void testSortowaniaJB5() throws Exception {
+    public void testSortowaniaJB9() throws Exception {
         double[] toSort = {5, 8, 1, 3, 2, 7, 6};
         double[] expeccted = {8, 7, 6, 5, 3, 2, 1};
 
