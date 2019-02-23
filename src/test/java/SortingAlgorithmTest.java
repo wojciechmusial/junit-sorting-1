@@ -28,28 +28,28 @@ public class SortingAlgorithmTest{
         @Test
         public void testSortowaniaJB1() throws Exception {
             double[] toSort = {5, 1, 3, 2};
-            double[] expeccted = {1, 2, 3, 5};
+            double[] expected = {1, 2, 3, 5};
 
             classUnderTest.sort(toSort, true);
-            Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+            Assert.assertArrayEquals(expected, toSort, 0.0001);
 
         }
         @Test
         public void testSortowaniaJB2() throws Exception {
             double[] toSort = {5, 1, 3, 2};
-            double[] expeccted = {5, 3, 2, 1};
+            double[] expected = {5, 3, 2, 1};
 
             classUnderTest.sort(toSort, false);
-            Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+            Assert.assertArrayEquals(expected, toSort, 0.0001);
 
          }
         @Test
         public void testSortowaniaJB3() throws Exception {
             double[] toSort = {5, 1, 3, 2};
-            double[] expeccted = {5, 3, 2, 1};
+            double[] expected = {5, 3, 2, 1};
 
             classUnderTest.sort(toSort, false);
-            Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+            Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
     @Test
