@@ -19,8 +19,6 @@ public class SortingAlgorithmTest {
             classUnderTest.sort(toSort, true);
             Assert.assertArrayEquals(expeccted, toSort, 0.0001);
 
-            //Assert.assertTrue(classUnderTest.SortingAlgorithms(kod));
-
         }
 
 
