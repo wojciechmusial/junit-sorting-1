@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
+import java.util.Random;
 public class SortingAlgorithmTest {
     private SortingAlgorithms classUnderTest;
 
@@ -21,6 +21,7 @@ public class SortingAlgorithmTest {
         classUnderTest.sort(toSort, true);
 
         Assert.assertArrayEquals(expected, toSort, 0.001);
+
     }
 
 
@@ -54,6 +55,7 @@ public class SortingAlgorithmTest {
 
     }
 
+
     @Test
     public void testSortowaniaJB4() throws Exception {
         double[] toSort = {5, 1, 3, 2, 6};
@@ -71,7 +73,19 @@ public class SortingAlgorithmTest {
 
         classUnderTest.sort(toSort, false);
         Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+    }
 
+    @Test
+    public void testSortowaniaJB9() throws Exception {
+        double[] toSort = new double[10000];
+        Random r = new Random();
+        for (int i = 0; i < toSort.length; i++)
+            toSort[i] = r.nextDouble();
+        classUnderTest.sort(toSort, true);
+        for (int i = 0; i < toSort.length - 1; i++) {
+            Assert.assertTrue(toSort[i] <= toSort[i + 1]);
+        }
     }
 
 }
+
