@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SortingAlgorithmTest{
+public class SortingAlgorithmTest {
     private SortingAlgorithms classUnderTest;
 
     @Before
@@ -13,52 +13,44 @@ public class SortingAlgorithmTest{
 
 
     @Test
-    public void testSortowaniaMN1(){
-        double[] toSort = {5,1,3,2};
+    public void testSortowaniaMN1() {
+        double[] toSort = {5, 1, 3, 2};
 
-        double[] expected={1, 2, 3, 5};
+        double[] expected = {1, 2, 3, 5};
 
         classUnderTest.sort(toSort, true);
 
         Assert.assertArrayEquals(expected, toSort, 0.001);
-
     }
 
 
-        @Test
-        public void testSortowaniaJB1() throws Exception {
-            double[] toSort = {5, 1, 3, 2};
-            double[] expected = {1, 2, 3, 5};
-
-            classUnderTest.sort(toSort, true);
-            Assert.assertArrayEquals(expected, toSort, 0.0001);
-
-        }
-        @Test
-        public void testSortowaniaJB2() throws Exception {
-            double[] toSort = {5, 1, 3, 2};
-            double[] expected = {5, 3, 2, 1};
-
-            classUnderTest.sort(toSort, false);
-            Assert.assertArrayEquals(expected, toSort, 0.0001);
-
-         }
-        @Test
-        public void testSortowaniaJB3() throws Exception {
-            double[] toSort = {5, 1, 3, 2};
-            double[] expected = {5, 3, 2, 1};
-
-            classUnderTest.sort(toSort, false);
-            Assert.assertArrayEquals(expected, toSort, 0.0001);
-
-    }
     @Test
-    public void testSortowaniaJB5() throws Exception {
-        double[] toSort = {5,8, 1, 3, 2,7, 6};
-        double[] expeccted = {8,7,6, 5, 3, 2, 1};
+    public void testSortowaniaJB1() throws Exception {
+        double[] toSort = {5, 1, 3, 2};
+        double[] expected = {1, 2, 3, 5};
+
+        classUnderTest.sort(toSort, true);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
+
+    }
+
+    @Test
+    public void testSortowaniaJB2() throws Exception {
+        double[] toSort = {5, 1, 3, 2};
+        double[] expected = {5, 3, 2, 1};
 
         classUnderTest.sort(toSort, false);
-        Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
+
+    }
+
+    @Test
+    public void testSortowaniaJB3() throws Exception {
+        double[] toSort = {5, 1, 3, 2};
+        double[] expected = {5, 3, 2, 1};
+
+        classUnderTest.sort(toSort, false);
+        Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
 
@@ -71,4 +63,15 @@ public class SortingAlgorithmTest{
         Assert.assertArrayEquals(expected, toSort, 0.0001);
 
     }
+
+    @Test
+    public void testSortowaniaJB5() throws Exception {
+        double[] toSort = {5, 8, 1, 3, 2, 7, 6};
+        double[] expeccted = {8, 7, 6, 5, 3, 2, 1};
+
+        classUnderTest.sort(toSort, false);
+        Assert.assertArrayEquals(expeccted, toSort, 0.0001);
+
+    }
+
 }
