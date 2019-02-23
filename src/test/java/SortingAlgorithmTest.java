@@ -8,7 +8,7 @@ public class SortingAlgorithmTest{
     @Before
 
     public void setUp() throws Exception {
-        classUnderTest = new SortingAgorithms();
+        classUnderTest = new SortingAlgorithms();
     }
 
 
@@ -24,13 +24,6 @@ public class SortingAlgorithmTest{
 
     }
 
-
-
-        private SortingAlgorithms classUnderTest;
-        @Before
-        public void setUp() throws Exception {
-            classUnderTest = new SortingAlgorithms();
-        }
 
         @Test
         public void testSortowaniaJB1() throws Exception {
